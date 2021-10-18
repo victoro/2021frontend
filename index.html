@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Proiect 2021</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(() => {
+            $('.right-container > div').hide();
+            $('.menu-items > li').click(function() {
+                $('.right-container > div').hide();
+                $('.right-container > div.'+$(this).prop('class')).show();
+            });
+        }); 
+        
+    </script>
+        
 </head>
 <body>
-    <div style="width: 90%; min-height: 500px; border: 1px solid #000;">
+        <div style="margin: 0 auto; width: 90%; min-height: 500px; border: 1px solid #000;">
+            <div class="left-container">
+                <fieldset>
+                    <legend>Tag-uri html</legend>
+                    <ul class="menu-items">
+                        <li class="paragraph">Paragraf</li>
+                        <li class="heading">Heading</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Proprietati CSS</legend>
+                    <ul class="menu-items">
+                        <li class="color">Color</li>
+                        <li class="background">Background</li>
+                        <li class="border">Border</li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="right-container">
+                <div class="paragraph"><p>Acesta este un paragraf</p></div>
+                <div class="heading">
+                    <h1>Acesta este un header H1</h1>
+                    <h2>Acesta este un header h2</h2>
+                    <h3>Acesta este un header h3</h3>
+                    <h4>Acesta este un header h4</h4>
+                    <h5>Acesta este un header h5</h5>
+                </div>
+                <div class="color">
+                    <h1 style="color: red;">Acesta este un header H1</h1>
+                    <h2 style="color: blueviolet;">Acesta este un header h2</h2>
+                    <h3 style="color: teal;">Acesta este un header h3</h3>
+                    <h4 style="color:brown;">Acesta este un header h4</h4>
+                    <h5 style="color: rebeccapurple;">Acesta este un header h5</h5>
+                </div>
+                <div class="background">
+                    <p style="background: red;">Using background property</p>
+                    <p style="background-color: blueviolet;">Using background-color property</p>
+                    <p style="background-image: url('images/sponge-bob.png'); height: 500px; width: auto;">Using background-image property</hp>
+                </div>
+                <div class="border">
+                    <p style="border:1px solid red;">Acesta este un header H1</p>
+                    <p style="border-bottom:1px solid blueviolet;">Using border bottom</p>
+                    <p style="border-top:1px solid teal;">Using border top</p>
+                    <p style="border-left:11px solid brown;">Using border left</p>
+                    <p style="border-top:5px solid rebeccapurple;border-right:5px solid rebeccapurple;">Using border top and border right</p>
+                </div>
+            </div>
+            
+        </div>
+        
 
-    </div>
 </body>
 </html>

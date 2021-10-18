@@ -1,0 +1,47 @@
+body {
+    font-style:normal;
+}
+.left-container {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: auto;
+    color: rgb(34, 32, 32);
+    font-weight: bold;
+}
+.right-container {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    height: auto;
+    border: 1px solid rgb(34, 32, 32);
+    font-weight: bold;
+}
+.left-container fieldset {
+    margin: 15px 5px 15px 15px;
+    padding: 0;
+}
+.left-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+.left-container li {
+    padding: 3px;
+}
+.left-container legend {
+    border: 1px solid rgb(124, 2, 2);
+    padding: 0 15px 0 15px;
+    margin-top: 15px;
+}
+.right-container div {
+    border: 1px solid rgb(124, 2, 2);
+    margin: 5px;
+    padding: 5px;
+    display: none;
+}
+.menu-items > li {
+    background-color: moccasin;
+    margin-top: 2px;
+    cursor: pointer;
+}
